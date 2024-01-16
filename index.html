@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My Paint</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/paint.png">
+    </head>
+    <body>
+        
+        <canvas width="900" height="600"></canvas>
+
+        <section class="container">
+            <div class="tool-box">
+                <div class="button-tool">
+                    <button class="tool" data-action="brush"><span class="material-symbols-outlined">brush</span></button>
+                </div>
+                <div class="button-tool">
+                    <button class="tool" data-action="rubber"><span class="material-symbols-outlined">ink_eraser</span></button>
+                </div>
+                <div class="button-tool">
+                    <button class="color"><input class="input-color" type="color"></button>
+                </div>
+            </div>
+            
+            <div class="tool-box">
+                <div class="size">
+                    <button class="button-size" data-size="5"><span></span></button>
+                </div>
+                <div class="size">
+                    <button class="button-size" data-size="10"><span></span></button>
+                </div>
+                <div class="size">
+                    <button class="button-size" data-size="20"><span></span></button>
+                </div>
+                <div class="size">
+                    <button class="button-size" data-size="30"><span></span></button>
+                </div>
+            </div>
+
+            <div class="tool-box">
+                <div class="button-tool">
+                    <button class="button-clear">
+                        <span class="material-symbols-outlined">delete</span></div>
+                    </button>
+                </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>

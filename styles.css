@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.container {
+    width: 110px;
+    height: 400px;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    user-select: none;
+}
+
+.tool-box {
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.button-tool, .size, .button-size {
+    padding: 5px;
+}
+
+.tool:hover, .button-size:hover, .color:hover, .button-clear:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: none;
+}
+
+.tool span {
+    font-size: 1.5rem;
+}
+
+.input-color {
+    border: none;
+    background: none;
+    width: 45px;
+    height: 45px;
+    padding: 5px 7px;
+}
+
+.input-color::-webkit-color-swatch {
+    border-radius: 50%;
+}
+
+.button-size {
+    height: auto;
+}
+
+.button-size span {
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 100px;
+}
+
+.button-size[data-size='5'] span {
+    height: 5px;
+}
+
+.button-size[data-size='10'] span {
+    height: 10px;
+}
+
+.button-size[data-size='20'] span {
+    height: 20px;
+}
+
+.button-size[data-size='30'] span {
+    height: 30px;
+}
+
+.active {
+    background-color: rgb(226, 226, 226);
+}
